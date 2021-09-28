@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Balance Scale</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Left Weight" placeholder="Left Weight" required="required" />
+    	<input type="text" name="Left Distance" placeholder="Left Distance" required="required" />
+        <input type="text" name="Right Weight" placeholder="Right Weight" required="required" />
+		<input type="text" name="Right Distance" placeholder="Right Distance" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ otptext }}
+
+ </div>
+
+
+</body>
+</html>
