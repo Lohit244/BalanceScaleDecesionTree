@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Difference <= -0.5\ngini = 0.569\nsamples = 437\nvalue = [34, 201, 202]\nclass = Right", fillcolor="#fefeff"] ;
+1 [label="gini = 0.0\nsamples = 202\nvalue = [0, 0, 202]\nclass = Right", fillcolor="#8139e5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Difference <= 0.5\ngini = 0.247\nsamples = 235\nvalue = [34, 201, 0]\nclass = Left", fillcolor="#5ae996"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 34\nvalue = [34, 0, 0]\nclass = Balanced", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 201\nvalue = [0, 201, 0]\nclass = Left", fillcolor="#39e581"] ;
+2 -> 4 ;
+}
